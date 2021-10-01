@@ -1,0 +1,19 @@
+---
+title: "data_import"
+output: github_document
+---
+
+```{r setup}
+library(tidyverse)
+```
+
+## read in some data
+
+read in the litters dataset
+
+```{r}
+litter_df = read_csv("./data_import_examples/FAS_litters.csv")
+litter_df=janitor::clean_names(litter_df)
+```
+
+## Take a look at the data. 
